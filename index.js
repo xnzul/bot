@@ -286,7 +286,7 @@ client.on('group-participants-update', async (anu) => {
 					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case #'map':
+				case '#map':
 					if (args.length < 1) return reply('𝐋𝐨𝐤𝐚𝐬𝐢 𝐲𝐚𝐧𝐠 𝐦𝐚𝐮 𝐝𝐢𝐜𝐚𝐫𝐢 𝐝𝐢𝐦𝐚𝐧𝐚 𝐤𝐚𝐤?')
 					tels = body.slice(5)
 					reply(mess.wait)
